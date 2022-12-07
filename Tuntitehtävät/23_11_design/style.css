@@ -1,0 +1,12 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.material-symbols-outlined { /* google icons, kopioitu css -määritys */
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

@@ -1,0 +1,13 @@
+.colorful {
+    color: rgb(255, 145, 0);
+    background-color: bisque;
+}
+
+.colored {
+    background-color: black;
+    color: white;
+}
+
+.sizeup {
+    font-size: 1.2em;
+}

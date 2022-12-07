@@ -1,0 +1,5 @@
+
+ignoretesti.html 
+/ignorethese
+
+*.log -> ignoraa kaikki .log -tiedostot jne
