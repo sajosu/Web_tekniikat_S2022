@@ -1,0 +1,40 @@
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  color: #80ddb5;
+}
+
+.green {
+  color: #437962;
+  border: 3px solid #437962;
+  padding: 5px;
+  margin: 5px;
+}
+.green .highlight {
+  color: #656565;
+  font-weight: bold;
+}
+
+.blue {
+  color: #375290;
+  border: 3px solid #375290;
+  padding: 5px;
+  margin: 5px;
+}
+.blue .highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+.pink {
+  color: #f19e9e;
+  border: 3px solid #f19e9e;
+  padding: 5px;
+  margin: 5px;
+}
+.pink .highlight {
+  color: lightseagreen;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

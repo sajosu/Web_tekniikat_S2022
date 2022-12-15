@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hyper super Kouluprojekti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b0414a5597.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/sari.css">
+    <script src = "../JS/indexjs.js" defer></script>
+    <script src="../JS/sari.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Carousel bootstrap start here -->
+      <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/england_background.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Hyper Super Kouluprojekti</h5>
+            <p>Tervetuloa koittamaan onneasi</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../images/england_background.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nauti seikkailustasi</h5>
+            <p>Alta löydät visaisia englannin kielen pulmia</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../images/england_background.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Onnea matkaan!</h5>
+            <p>Olkoon seikkailusi hauska ja naurua täynnä</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel bootstrap end here -->
+  </header>
+  <!-- Navbar bootstrap start here -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="../index.html" id="link1">Etusivu <i class="fa-solid fa-dungeon" id="home"> </i></a> 
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="./teemu.html" id="link2">Eläintarha <i class="fa-solid fa-otter" id="otter"> </i></a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="./tommi.html" id="link3">Maantieto <i class="fa-solid fa-kiwi-bird" id="kiwi"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="./sari.html" id="link4">Englanti <i class="fa-solid fa-crow" id="crow"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="./timo.html" id="link5">Ympäristöoppi <i class="fa-solid fa-frog" id="frog"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="./roosa.html" id="link6">Matikkavisa <i class="fa-solid fa-dog" id="dog"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="./tietoja.html" id="link7">Tietoja <i class="fa-regular fa-lightbulb" id="bulb"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Navbar bootstrap end here -->
+    <div id = "content">
+      <div class ="text" id ="start"><h2 id ='title'>Tervetuloa tekemään enkkutestiä!</h2>
+      
+          <p><br>Syötä ihan aluksi nimi tai nimimerkki: <input type=text id ="name" maxlength="20"></input>  <button type="button" id="alias" class="btn btn-light btn-sm">Lähetä</button></p>
+      <p>Tällä sivulla on viisi kysymystä englannin kieleen liittyen. Kysymykset koskevat sanastoa ja sanontoja.
+      Valitse vastauksesi huolellisesti, sillä vastausta ei voi vaihtaa jälkikäteen. Jokaiseen kysymykseen on yksi oikea vastaus. Sivulla on myös tulostaulu, josta näet moneenko kysymykseen olet
+  vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
+  </div>
+      <div class = "quiz1" id = "quiz1"><h2>Kysymys 1</h2><p>Mikä on "ananas" englanniksi?</p> 
+          
+          <div>
+      
+          <input type="radio" name="choice1" id="q1a1" class="check" checked>
+          <label for="q1a1"> pear </label>
+      </div>
+      <div>
+          <input type="radio" name="choice1" id="q1a2" class="check">
+          <label for="q1a2"> pineapple </label>
+      </div>
+      <div>
+          <input type="radio" name="choice1" id="q1a3" class="check">
+          <label for="q1a3"> cherry </label>
+      </div>
+      <div>
+          <input type="radio" name="choice1" id="q1a4" class="check">
+          <label for="q1a4"> grape </label><br><br>
+  
+          <p><button type="button" class="btn" id="answer1">Vastaa</button> <button type="button" class="btn invisible" id="next1">Seuraava kysymys</button>   </p>
+          <p id ="printResult1"></p>
+      
+      </div></div>
+      <div class = "quiz2 invisible" id = "quiz2"><h2>Kysymys 2</h2><p>Jatka lausetta: "You should not go outside, weather forecast said there is going to be..." </p>
+          
+          <div>
+          <input type="radio" name="choice2" id="q2a1" checked>
+          <label for="q2a1"> ...thunderstorm</label>
+      </div>
+      <div>
+          <input type="radio" name="choice2" id="q2a2">
+          <label for="q2a2"> ...waterfall</label>
+      </div>
+      <div>
+          <input type="radio" name="choice2" id="q2a3">
+          <label for="q2a3"> ...surface</label>
+      </div>
+      <div>
+          <input type="radio" name="choice2" id="q2a4">
+          <label for="q2a4"> ...blackout </label><br><br>
+  
+          <p><button type="button" class="btn" id="answer2">Vastaa</button> <button type="button" class="btn invisible" id="next2">Seuraava kysymys</button> </p>
+          <p id ="printResult2"></p>
+      
+      </div></div>
+      <div class = "quiz3 invisible" id = "quiz3"><h2>Kysymys 3</h2><p>Kuinka sanot englanniksi "Parempi myöhään kun ei milloinkaan"?</p> 
+          
+          <div>
+          <input type="radio" name="choice3" id="q3a1" checked>
+          <label for="q3a1"> So far so good</label>
+      </div>
+      <div>
+          <input type="radio" name="choice3" id="q3a2">
+          <label for="q3a2"> Better late than never</label>
+      </div>
+      <div>
+          <input type="radio" name="choice3" id="q3a3">
+          <label for="q3a3"> To make matters worse</label>
+      </div>
+      <div>
+          <input type="radio" name="choice3" id="q3a4">
+          <label for="q3a4"> That's the last straw</label><br><br>
+  
+          <p><button type="button" class="btn" id="answer3">Vastaa</button> <button type="button" class="btn invisible" id="next3">Seuraava kysymys</button> </p>
+          <p id ="printResult3"></p>
+      
+      </div></div>
+      <div class = "quiz4 invisible" id = "quiz4"><h2>Kysymys 4</h2><p>Mitä tarkoittaa englannin sana fork?</p>  
+          
+          <div>
+          <input type="radio" name="choice4" id="q4a1" checked>
+          <label for="q4a1"> porsas </label>
+      </div>
+      <div>
+          <input type="radio" name="choice4" id="q4a2">
+          <label for="q4a2"> aita</label>
+      </div>
+      <div>
+          <input type="radio" name="choice4" id="q4a3">
+          <label for="q4a3"> tie </label>
+      </div>
+      <div>
+          <input type="radio" name="choice4" id="q4a4">
+          <label for="q4a4"> haarukka</label><br><br>
+  
+          <p><button type="button" class="btn" id="answer4">Vastaa</button> <button type="button" class="btn invisible" id="next4">Seuraava kysymys</button> </p>
+          <p id ="printResult4"></p>
+      
+      </div></div>
+      <div class = "quiz5 invisible" id = "quiz5"><h2>Kysymys 5</h2><p>Mikä on "onnekas" englanniksi?</p> 
+          
+          <div>
+          <input type="radio" name="choice5" id="q5a1" checked>
+          <label for="q5a1"> happy</label>
+      </div>
+      <div>
+          <input type="radio" name="choice5" id="q5a2">
+          <label for="q5a2"> good</label>
+      </div>
+      <div>
+          <input type="radio" name="choice5" id="q5a3">
+          <label for="q5a3"> merry</label>
+      </div>
+      <div>
+          <input type="radio" name="choice5" id="q5a4">
+          <label for="q5a4"> lucky</label><br><br>
+  
+          <p><button type="button" class="btn" id="answer5">Vastaa</button> <button type="button" class="btn invisible" id="next5">Palaute</button> </p>
+          <p id ="printResult5"></p>
+      
+      </div>
+      </div>
+      <div class = "side" id ="results"> <h3>Tulokset</h3>
+          <p id="answersAmount">Vastatut kysymykset: 0/5</p>
+          <p id="correctAmount">Oikeat vastaukset: 0</p>
+      <h3>Palkinnot</h3>
+        <div class = prizes><table class = prizetable><tr>
+      <td id = "prize1">1</td>
+      <td id = "prize2">2</td>
+      <td id = "prize3">3</td>
+      <td id = "prize4">4</td>
+      <td id = "prize5">5</td>
+      </tr></table></div><br><br>
+  
+      <div class = feedback><p id ="feedback">Hauskaa nähdä miten testi menee!</p></div>
+      <img src="../images/crow2.PNG">
+      </div>
+  
+      </div>
+
+      
+    <!-- footer starts here -->
+    <footer class="d-flex flex-wrap py-1 m-0 px-1" id="footer">
+      
+      <img src="../images/oululogo.png" alt="">
+
+      <div class="team">
+      <ul class="nav col-md-0">
+       <li class="footer-item"><b>SG1-A-Team:</b></li>
+        <li class="footer-item">Roosa </li>
+        <li class="footer-item">Sari </li>
+        <li class="footer-item">Timo </li>
+        <li class="footer-item">Teemu </li>
+        <li class="footer-item">Tommi </li>
+      </ul>
+    </div>
+    </footer>
+    <!-- footer ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

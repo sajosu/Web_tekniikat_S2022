@@ -1,0 +1,50 @@
+//luodaan teema mixin
+
+@mixin theme($themecolor: #437962) {
+    color: $themecolor;
+    border: 3px solid $themecolor;
+    padding: 5px;
+    margin: 5px;
+    .highlight {
+        //jos teeman väri on sininen korostetaan keltaisella,
+        @if $themecolor == $blue {
+            color: yellow;
+        }
+        //jos teeman väri on pinkki, halutaan eri korostusväri
+
+        @else if $themecolor == $pink {
+                color: lightseagreen;
+        }
+        @else {
+            color:#656565
+        }
+
+        font-weight: bold;
+    }
+}
+
+$highlight: #80ddb5;
+$deepGreen: #437962;
+$blue: #375290;
+$pink: #f19e9e;
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color:$highlight;
+}
+
+.green {
+    @include theme($themecolor: $deepGreen);
+}
+
+.blue {
+    @include theme($themecolor: $blue);
+}
+
+.pink {
+    @include theme($themecolor: $pink);
+}
+
