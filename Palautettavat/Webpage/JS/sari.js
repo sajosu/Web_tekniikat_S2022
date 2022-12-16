@@ -292,3 +292,50 @@ document.getElementById('start').innerHTML = '<center>' + 'Olet nyt suorittanut 
 }
 
 NEXT_BUTTON5.addEventListener('click', feedback);
+
+//Lastly, hover image animations:
+
+let link1 = document.getElementById('link1')
+let home = document.getElementById('home');
+
+function animation() {
+    home.classList.add('fa-bounce');
+}
+
+function no_animation() {
+    home.classList.remove('fa-bounce');
+}
+
+link1.addEventListener('mouseenter', animation);
+link1.addEventListener('mouseleave', no_animation);
+
+ //------//
+let link2 = document.getElementById('link2')
+let crow = document.getElementById('crow');
+
+function animation2() {
+    crow.classList.add('fa-bounce');
+}
+
+function no_animation2() {
+    crow.classList.remove('fa-bounce');
+}
+
+link2.addEventListener('mouseenter', animation2);
+link2.addEventListener('mouseleave', no_animation2);
+
+//-----//
+
+let link3 = document.getElementById('link3')
+let pen = document.getElementById('pen');
+
+function animation3() {
+    pen.classList.add('fa-bounce');
+}
+
+function no_animation3() {
+    pen.classList.remove('fa-bounce');
+}
+
+link3.addEventListener('mouseenter', animation3);
+link3.addEventListener('mouseleave', no_animation3);

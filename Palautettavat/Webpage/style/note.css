@@ -1,7 +1,59 @@
 body {
-    background-color: bisque;
+  margin: 0;
+  font-family: "livvic", sans-serif;
+  background-color: #499DB9;
+  font-size: 1.2em;
 }
 
-#note_text {
-    height: 150px;
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: -webkit-min-content -webkit-min-content auto;
+  grid-template-rows: min-content min-content auto;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  background-color: #ffffff;
 }
+.container header {
+  grid-row: 1;
+  padding: 10px;
+  font-family: "Caveat Brush", cursive;
+  font-size: 3em;
+  color: #0B485D;
+  margin-left: 10px;
+}
+.container .navigation {
+  grid-row: 2;
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container a:hover {
+  background-color: #FFD7C0;
+}
+.container .main {
+  grid-row: 3;
+  margin-left: 20px;
+}
+.container .main h3 {
+  font-weight: bold;
+  padding: 5px 5px 5px 0px;
+}
+.container .notes {
+  display: inline;
+}
+.container h4 {
+  font-weight: bold;
+}
+.container .newnote {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 3px;
+  display: inline-block;
+}
+.container .importantNote {
+  border: 2px solid #DA4F00;
+  padding: 5px;
+  margin: 3px;
+}/*# sourceMappingURL=note.css.map */

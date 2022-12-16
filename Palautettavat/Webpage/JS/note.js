@@ -13,6 +13,7 @@ let date = dd + '.' + mm + '.' + yyyy;
 const NAME_INPUT = document.getElementById('name');
 const TEXT_INPUT = document.getElementById('note_text');
 const SUBMIT_BUTTON = document.getElementById('submit_button');
+const NOTES = document.querySelector('#notes');
 
 let user="";
 let input ="";
@@ -22,13 +23,21 @@ function print() {
 
     user = NAME_INPUT.value;
     input = TEXT_INPUT.value;
+    
     let heading = date + ' ' + '(' + user + ')';
   /*   let h = document.createElement('h3');
     h.textContent = heading; */
     let newDiv = document.createElement('div');
-    newDiv.innerHTML = '<h3>' + heading +'</h3>' + input;
-    document.body.appendChild(newDiv);
-    console.log(h); 
+    newDiv.innerHTML = '<h4>' + heading +'</h4>' + input;
+
+    if (document.getElementById('important').checked == true) {
+        newDiv.classList.add('importantNote');
+    }
+    else { newDiv.classList.add('newnote');  
+    
+  }
+    
+    NOTES.appendChild(newDiv);
 }
 
 SUBMIT_BUTTON.addEventListener('click', print);

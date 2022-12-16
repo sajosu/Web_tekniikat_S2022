@@ -1,0 +1,76 @@
+$deepOrange: #DA4F00;
+$lightOrange: #FFD7C0;
+$deepBlue: #0B485D;
+$headerFont: 'Caveat Brush', cursive;
+$textFont: 'livvic', sans-serif;
+$white: #ffffff;
+
+
+body{
+    margin: 0;
+    font-family: $textFont;
+    background-color: #499DB9;
+    font-size: 1.2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content auto;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    background-color: $white;
+
+    header {
+        grid-row: 1;
+        padding: 10px;
+        font-family: $headerFont;
+        font-size: 3em;
+        color: $deepBlue;
+        margin-left: 10px;
+        
+    }
+
+    .navigation {
+        grid-row: 2;
+        border-bottom:1px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    a:hover {
+        background-color: $lightOrange;
+    }
+
+    .main {
+        grid-row: 3;
+        margin-left: 20px;
+        h3 {
+            font-weight: bold;
+            padding: 5px 5px 5px 0px;
+        }
+    }
+
+    .notes {
+        display: inline;
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+
+    .newnote {
+        border: 1px solid black;
+        padding: 5px;
+        margin: 3px;
+        display: inline-block;
+    }
+
+    .importantNote {
+        border: 2px solid $deepOrange;
+        padding: 5px;
+        margin: 3px;
+    }
+   
+}
