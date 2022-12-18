@@ -1,6 +1,6 @@
 # Web_tekniikat_S2022
 
-This repository contains returnable contents of web -tekniikat course, as well as other tasks from the course.<br>
+This repository contains returnable contents of web -tekniikat course, as well as tasks we have done at the classes (not returnable).<br>
 
 <b>For teacher:</b><br>
 Palautettavat -folder contains the portfolio webpage I have done for this course (foldername Webpage) and also the very first github -task (foldername web-tekniikat). <br>
