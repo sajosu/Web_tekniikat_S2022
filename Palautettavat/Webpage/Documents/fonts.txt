@@ -1,4 +1,4 @@
 
 
-Otsikkotekstit: font-family: 'Caveat Brush', cursive;
-"Leipätekstit": font-family: 'Livvic', sans-serif;
+Headlines: font-family: 'Caveat Brush', cursive;
+Main font: font-family: 'Livvic', sans-serif;
