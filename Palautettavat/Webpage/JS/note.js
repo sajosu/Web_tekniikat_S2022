@@ -15,29 +15,40 @@ const TEXT_INPUT = document.getElementById('note_text');
 const SUBMIT_BUTTON = document.getElementById('submit_button');
 const NOTES = document.querySelector('#notes');
 
-let user="";
-let input ="";
-
-
 function print() {
 
-    user = NAME_INPUT.value;
-    input = TEXT_INPUT.value;
+
+    // Read the input fields:
+
+    let user = NAME_INPUT.value;
+    let input = TEXT_INPUT.value;
+
+    //contents of note:
     
     let heading = date + ' ' + '(' + user + ')';
-  /*   let h = document.createElement('h3');
-    h.textContent = heading; */
     let newDiv = document.createElement('div');
     newDiv.innerHTML = '<h4>' + heading +'</h4>' + input;
+
+    //check if note is important, class according to it
 
     if (document.getElementById('important').checked == true) {
         newDiv.classList.add('importantNote');
     }
-    else { newDiv.classList.add('newnote');  
+      else { newDiv.classList.add('newnote');  
     
-  }
+    }
+
+    //Empty the input fields, bring focus to the fist field:
+
+    NAME_INPUT.value = '';
+    NAME_INPUT.focus();
+    TEXT_INPUT.value = '';
     
+    //create note div on page:
+
     NOTES.appendChild(newDiv);
+
+  
 }
 
 SUBMIT_BUTTON.addEventListener('click', print);

@@ -54,23 +54,35 @@ body{
 
     .notes {
         display: inline;
+        background-color: $white;
     }
 
-    h4 {
+    div > h4 {
         font-weight: bold;
     }
 
     .newnote {
         border: 1px solid black;
         padding: 5px;
-        margin: 3px;
-        display: inline-block;
+        margin: 3px 20px 0px 0px;
+        background-color: $white; 
     }
 
     .importantNote {
         border: 2px solid $deepOrange;
         padding: 5px;
-        margin: 3px;
+        margin: 3px 20px 0px 0px;
+        background-color: $white;    
     }
-   
+
+    #navbarNav {
+        justify-content: space-between;
+    }
+
+    ul ~ span {
+        color: #93b5c0;
+        font-size: 0.8em;
+        
+    }
+
 }
